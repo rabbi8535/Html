@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form_3</title>
+  </head>
+  <body>
+    <form action="/action_page.php" method="post">
+      <fieldset>
+        <legend>Basic Form</legend>
+
+        <!-- chosing list with select multiple item -->
+
+        <label for="cars">Choose a car:</label><br />
+        <hr />
+        <select name="com_p" id="com_p" size="3" multiple>
+          <option value="cpu" selected>Control Procesing Unit</option>
+          <option value="motherboard">Motherboard</option>
+          <option value="ram">Ram</option>
+          <option value="ssd">Solid Sata Drive</option>
+          <option value="ps">Power Supply</option>
+          <option value="cs">Casing</option>
+          <option value="monitor">Monitor</option>
+        </select>
+        <hr />
+        <br />
+
+        <!-- chosing list with datalist-->
+        
+        <input list="pc" name="pcs" />
+        <datalist id="pc">
+          <option value="cpu">Control Procesing Unit</option>
+          <option value="motherboard">Motherboard</option>
+          <option value="ram">Ram</option>
+          <option value="ssd">Solid Sata Drive</option>
+          <option value="ps">Power Supply</option>
+          <option value="cs">Casing</option>
+          <option value="monitor">Monitor</option>
+        </datalist>
+        <hr /><br>
+
+        <textarea rows="5" cols="20">Type your Mind</textarea><br>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678">
+
+       
+        <input type="button" value="Submit">
+
+      </fieldset>
+    </form>
+  </body>
+</html>
